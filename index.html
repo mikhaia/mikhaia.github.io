@@ -33,20 +33,59 @@
 
     <div class="step" data-x="0" data-y="-1500" data-rotate="360">
         <h3>Selectors that could be hard to understand</h3>
-        <pre><code>
+        <pre style="font-size: 30px"><code>
             element>element {}
             element+element {}
             element1~element2 {}
-
-            [attribute~=value] {}
-            [attribute|=value] {}
-            [attribute^=value] {}
-            [attribute$=value] {}
-            [attribute*=value] {}
         </code></pre>
     </div>
 
-    <div class="step slide" data-x="1000" data-y="-1500" data-rotate="360">
+    <div class="step" data-x="1000" data-y="-1500" data-rotate="360">
+        <h3>[attribute~=value] {}</h3>
+        <div>One of separated by spaces value for example:</div>
+        <pre style="font-size: 30px"><code>
+                yes for: [attr="value novalue"]
+                no for: [attr="novalue"]
+        </code></pre>
+    </div>
+
+    <div class="step" data-x="2000" data-y="-1500" data-rotate="360">
+        <h3>[attribute|=value] {}</h3>
+        <div>Attribute starts with value</div>
+        <pre style="font-size: 30px"><code>
+                yes for: "value" or "value-", or "value-2"
+                no for: [attr="value123"]
+        </code></pre>
+    </div>
+
+    <div class="step" data-x="3000" data-y="-1500" data-rotate="360">
+        <h3>[attribute^=value] {}</h3>
+        <div>Attibute starts with value</div>
+        <pre style="font-size: 30px"><code>
+                yes for: "value123", "value-123", "value"
+                no for: "novalue", "no value"
+        </code></pre>
+    </div>
+
+    <div class="step" data-x="4000" data-y="-1500" data-rotate="360">
+        <h3>[attribute$=value] {}</h3>
+        <div>Attibute ends with value</div>
+        <pre style="font-size: 30px"><code>
+                yes for: "novalue", "value", "no-value"
+                no for: "value123"
+        </code></pre>
+    </div>
+
+    <div class="step" data-x="5000" data-y="-1500" data-rotate="360">
+        <h3>[attribute*=value] {}</h3>
+        <div>Attribute have value at any part</div>
+        <pre style="font-size: 30px"><code>
+                yes for: "value", "novalueno", "value-123"
+        </code></pre>
+    </div>
+    <!--  -->
+
+    <div class="step slide" data-x="1000" data-y="-3000" data-rotate="180">
         <h3>Box? Flex? Flexbox? what's all what you need</h3>
         <br>
         <div>Use it for changing position any containers</div>
@@ -54,7 +93,7 @@
         <div><u><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">That is really good and big theme</a></u></div>
     </div>
 
-    <div class="step slide" data-x="2000" data-y="-1500" data-rotate="360">
+    <div class="step slide" data-x="2000" data-y="-3000" data-rotate="180">
         <h3>Flex for main container</h3>
         <br>
         <ul>
@@ -67,7 +106,7 @@
         </ul>
     </div>
 
-    <div class="step slide" data-x="3000" data-y="-1500" data-rotate="360">
+    <div class="step slide" data-x="3000" data-y="-3000" data-rotate="180">
         <h3>Flex for self</h3>
         <br>
         <ul>
