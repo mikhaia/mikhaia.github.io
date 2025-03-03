@@ -1,0 +1,66 @@
+.c-layout-header {
+    background: transparent !important;
+}
+
+.c-layout-header-fixed .c-layout-page {
+    margin-top: 0;
+}
+
+ul.navbar-nav.c-theme-nav > li > a, ul.navbar-nav.c-theme-nav > li.c-active > a {
+    color: #fff !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.c-theme-btn.btn {
+    background-color: #386b27;
+    border-color: #1e3b17;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+}
+
+.c-theme-btn.btn:hover {
+    background-color: #1e3b17;
+    border-color: #1e3b17;
+}
+
+ul.navbar-nav.c-theme-nav > li:hover {
+    background-color: #fff;
+}
+
+ul.navbar-nav.c-theme-nav > li:hover > a {
+    color: #000 !important;
+}
+
+ul.navbar-nav.c-theme-nav > li.c-active {
+    background: linear-gradient(135deg, #1e3b17, #386b27);
+    border-radius: 0 0 5px 5px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+}
+
+.c-layout-revo-slider {
+    background: #000;
+}
+
+.slotholder {
+    opacity: 0;
+}
+
+.tp-bgimg {
+    opacity: 0.5 !important;
+}
+
+.c-logo {
+    filter: drop-shadow(0 0 3px white);
+}
+
+.c-layout-header .c-brand {
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+    border-radius: 0 0 5px 5px; 
+}
+
+.c-layout-header .c-brand .c-desktop-logo {
+    width: 200px;
+}
